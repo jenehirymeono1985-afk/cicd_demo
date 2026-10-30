@@ -36,6 +36,6 @@ match = re.search(r"```(?:\w+)?\n([\w\W]*?)```", response.text, re.DOTALL)
 code = match.group(1).strip()
 
 # write to file
-with open("loan_pmt.py", "w") as f:
+with open("loan_payment.py", "w") as f:
     f.write(code)
     f.close()
